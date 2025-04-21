@@ -30,5 +30,12 @@ class PerishableProductProperties extends ProductProperties {
     toString() {
       return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
     }
+  
+
+  static applyDiscount(products, discount) {
+    products.forEach(product => {
+      product.price -= product.price * discount;
+    });
   }
+  
   
