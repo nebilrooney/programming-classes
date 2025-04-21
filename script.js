@@ -17,7 +17,7 @@ toString() {
   }
 }
 
-const product  = new ProductProperties("Notebook", 2.00, 40);
+const product  = new ProductProperties("Ruler", 2.00, 40);
 console.log(product1.toString());
 console.log("Total Value:", product1.getTotalValue());
 
