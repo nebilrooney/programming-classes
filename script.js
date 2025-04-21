@@ -57,11 +57,17 @@ class PerishableProductProperties extends ProductProperties {
   }
 
   // Create 5 products (2 perishable)
-const product1 = new ProductProperties("Notebook", 3.00, 40);
-const product2 = new ProductProperties("Pen", 1.50, 100);
-const product3 = new ProductProperties("Stapler", 5.00, 10);
-const perishable1 = new PerishableProductProperties("egg", 1.50, 10, "2024-12-01");
-const perishable2 = new PerishableProductProperties("Yogurt", 0.99, 20, "2024-11-15");
+const product1 = new ProductProperties("Ruler", 2.00, 40);
+const product2 = new ProductProperties("Apple", 3.50, 100);
+const product3 = new ProductProperties("Mango", 4.00, 10);
+const perishable1 = new PerishableProductProperties("Egg", 1.50, 10, "2024-10-10");
+const perishable2 = new PerishableProductProperties("Juice", 0.99, 20, "2024-19-05");
 
-  
+// Add to store
+const store = new StoreProperties();
+store.addProduct(product1);
+store.addProduct(product2);
+store.addProduct(product3);
+store.addProduct(perishable1);
+store.addProduct(perishable2); 
   
