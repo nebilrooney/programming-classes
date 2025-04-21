@@ -17,3 +17,7 @@ toString() {
   }
 }
 
+const product1 = new ProductProperties("Notebook", 3.00, 40);
+console.log(product1.toString());
+console.log("Total Value:", product1.getTotalValue());
+
