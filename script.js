@@ -79,3 +79,12 @@ ProductProperties.applyDiscount(store.inventory, 0.15);
 
 // Print inventory value after discount
 console.log("Inventory Value AFTER 15% Discount: $" + store.getInventoryValue().toFixed(2));
+
+// Find and print details of a specific product
+const searchName = "Egg";
+const foundProduct = store.findProductByName(searchName);
+if (foundProduct) {
+  console.log("Found Product:", foundProduct.toString());
+} else {
+  console.log(`Product '${searchName}' not found.`);
+}
