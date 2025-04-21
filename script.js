@@ -81,12 +81,12 @@ function applyDiscountToStore(store, discount) {
 // ================== Testing the System ==================
 
 // Create 6 products (including 2 perishable)
-const product1 = new ProductProperties("Ruler", 2.00, 40);
-const product2 = new ProductProperties("Pencil", 1.20, 100);
-const product3 = new ProductProperties("Notebook", 3.00, 50);
-const perishable1 = new PerishableProductProperties("Milk", 1.50, 10, "2024-12-01");
-const perishable2 = new PerishableProductProperties("Yogurt", 0.99, 20, "2024-11-15");
-const product4 = new ProductProperties("Eraser", 0.50, 60);
+const product1 = new ProductProperties("Book", 2.00, 40);
+const product2 = new ProductProperties("Egg", 1.60, 100);
+const product3 = new ProductProperties("Apple", 4.00, 50);
+const perishable1 = new PerishableProductProperties("Milk", 2.00, 10, "2026-11-01");
+const perishable2 = new PerishableProductProperties("Juice", 0.99, 20, "2025-9-25");
+const product4 = new ProductProperties("Meat", 0.50, 60);
 
 // Create a store and add products
 const store = new StoreProperties();
