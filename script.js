@@ -112,7 +112,7 @@ if (found) {
 }
 
 // Search for a product that does NOT exist
-const notFound = store.findProductByName("Butter");
+const notFound = store.findProductByName("Water");
 if (!notFound) {
-  console.log("Product 'Butter' not found in inventory.");
+  console.log("Product 'Water' not found in inventory.");
 }
