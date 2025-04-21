@@ -17,7 +17,7 @@ toString() {
   }
 }
 
-const product1 = new ProductProperties("Notebook", 2.00, 40);
+const product  = new ProductProperties("Notebook", 2.00, 40);
 console.log(product1.toString());
 console.log("Total Value:", product1.getTotalValue());
 
@@ -55,5 +55,13 @@ class PerishableProductProperties extends ProductProperties {
       return this.inventory.find(product => product.name === name) || null;
     }
   }
+
+  // Create 5 products (2 perishable)
+const product1 = new ProductProperties("Notebook", 3.00, 40);
+const product2 = new ProductProperties("Pen", 1.50, 100);
+const product3 = new ProductProperties("Stapler", 5.00, 10);
+const perishable1 = new PerishableProductProperties("egg", 1.50, 10, "2024-12-01");
+const perishable2 = new PerishableProductProperties("Yogurt", 0.99, 20, "2024-11-15");
+
   
   
